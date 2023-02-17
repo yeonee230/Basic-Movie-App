@@ -1,7 +1,0 @@
-/* 1. CSS 파일을 만든다.  => 블라블라.module.css 
-   2. CSS 파일을 사용할 컴포넌트 파일에 import 해준다.  */
-
-   .btn{
-       background-color: cornflowerblue;
-       color: wheat;
-   }
