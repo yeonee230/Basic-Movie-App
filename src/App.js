@@ -14,7 +14,10 @@ function App() {
     
   };
 
-
+  const clickDelBtn = (event) => {
+    // const li = event.target.parentElement;
+    // li.remove();
+  }
   return (
     <div>
       <h1># My To Do List ({toDos.length})#</h1>
@@ -27,6 +30,10 @@ function App() {
         ></input>
         <button>Add To Do</button>
       </form>
+      <hr />
+       <ul>
+         {toDos.map((item,index) => <li key={index}>{item}<span onClick={clickDelBtn} index={index}> ❌ </span></li>)}
+       </ul>
     </div>
   );
 }
