@@ -1,16 +1,11 @@
-//1. componet 만든다.
-import propTypes from  "prop-types";
-function Button({text}){
-
-    return(
- <button>
-     {text}
- </button>
-    );
+import propTypes from "prop-types";
+import style from "./Button.module.css";
+function Button({ text }) {
+  return <button className={style.btn}>{text}</button>;
 }
 
 Button.propTypes = {
-    text: propTypes.string.isRequired,
-}
+  text: propTypes.string.isRequired,
+};
 
 export default Button;
