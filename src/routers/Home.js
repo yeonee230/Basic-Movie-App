@@ -17,7 +17,7 @@ function Home() {
   useEffect(() => {
     getMovies();
   }, []); //api 실행
-
+  console.log(process.env.PUBLIC_URL);
   return (
     <div className={styles.container}>
       {loading ? (
