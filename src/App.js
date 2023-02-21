@@ -9,10 +9,10 @@ function App() {
   
   return (
     
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/basic-movie-app" exact={true} element={<Home />} />
-        <Route path="/basic-movie-app/movie/:id" element={<Detail />} />
+        <Route path="/" exact={true} element={<Home />} />
+        <Route path="movie/:id" element={<Detail />} />
       </Routes>
     </BrowserRouter>
   );
