@@ -1,18 +1,19 @@
-import {  Routes, Route } from "react-router-dom";
+import {  Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./routers/Home";
 import Detail from "./routers/Detail";
-
+import "./styles.css";
 
 function App() {
  
   
   return (
-   
+    
+    <BrowserRouter>
       <Routes>
-        <Route path={`/`} element={<Home />} />
-        <Route path={`movie/:id`} element={<Detail />} />
+        <Route path="/react-movie-app" element={<Home />} />
+        <Route path="/react-movie-app/movie/:id" element={<Detail />} />
       </Routes>
-   
+    </BrowserRouter>
   );
 }
 
